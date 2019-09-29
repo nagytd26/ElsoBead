@@ -28,6 +28,8 @@ namespace Project
 
                 int legnagyobb = szamok[0];
                 int legnagyobbhely = 0;
+                int legkisebb = szamok[0];
+                int legkisebbhely = 0;
                 
 
 
@@ -38,11 +40,16 @@ namespace Project
                         legnagyobb = szamok[a];
                         legnagyobbhely = a;
                     }
+                    if (szamok[a] < legkisebb)
+                    {
+                        legkisebb = szamok[a];
+                        legkisebbhely = a;
+                    }
                    
 
 
                 }
-                Console.WriteLine("Legnagyobb: " + szamok[legnagyobbhely]);
+                Console.WriteLine("Legnagyobb:" + szamok[legnagyobbhely] + "\nLegkisebb:" + szamok[legkisebbhely]);
 
             }
             catch
