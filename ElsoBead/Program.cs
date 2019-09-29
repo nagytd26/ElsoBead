@@ -13,8 +13,8 @@ namespace Project
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Adjon meg 10 számot!");
-            int db = 10;
+            Console.WriteLine("Adja meg a bekérni kívánt elemek számát!");
+            int db = Convert.ToInt32(Console.ReadLine());
 
             try
             {
